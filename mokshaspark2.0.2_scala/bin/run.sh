@@ -25,12 +25,12 @@ fi
 
 echo "Starting Spark Kernel with SPARK_HOME=$SPARK_HOME"
 #KERNEL_ASSEMBLY=`(cd ${PROG_HOME}/lib; ls -1 toree-assembly-*.jar;)`
-KERNEL_ASSEMBLY="/opt/conda/share/jupyter/kernels/mokshaspark2.0.2_scala/lib/toree-assembly-0.2.0.dev1-incubating-SNAPSHOT.jar"
+#KERNEL_ASSEMBLY="/opt/conda/share/jupyter/kernels/mokshaspark2.0.2_scala/lib/toree-assembly-0.2.0.dev1-incubating-SNAPSHOT.jar"
 
 # disable randomized hash for string in Python 3.3+
 export PYTHONHASHSEED=0
 #TOREE_ASSEMBLY=${PROG_HOME}/lib/${KERNEL_ASSEMBLY}
-TOREE_ASSEMBLY=$KERNEL_ASSEMBLY
+TOREE_ASSEMBLY=${KERNEL_ASSEMBLY}
 # The SPARK_OPTS values during installation are stored in __TOREE_SPARK_OPTS__. This allows values to be specified during
 # install, but also during runtime. The runtime options take precedence over the install options.
 if [ "${SPARK_OPTS}" = "" ]
