@@ -6,7 +6,7 @@
     "PYTHON_EXEC": "python",
     "DEFAULT_INTERPRETER": "Scala",
     "KERNEL_ASSEMBLY": "/opt/conda/share/jupyter/kernels/mokshaspark2.0.2_scala/lib/toree-assembly-0.2.0.dev1-incubating-SNAPSHOT.jar",
-    "SPARK_OPTS": "--name IBM_ML_APP --master mesos://9.30.99.168:5050 --driver-memory 2g --executor-memory 1g --executor-cores 1 --queue thequeue  --conf spark.executor.uri=file:///mnt/share/spark-2.1.0-bin-hadoop2.7.tgz --conf spark.mesos.coarse=false --conf spark.executor.extraClassPath=/mnt/share/iml-library/library/* --conf spark.driver.extraClassPath=/mnt/share/iml-library/library/*",
+    "SPARK_OPTS": "--name IBM_ML_APP --master mesos://9.30.99.168:5050 --driver-memory 1g --executor-memory 1g --executor-cores 1 --queue thequeue  --conf spark.executor.uri=file:///mnt/share/spark-2.1.0-bin-hadoop2.7.tgz --conf spark.mesos.coarse=false --conf spark.executor.extraClassPath=/mnt/share/iml-library/library/* --conf spark.driver.extraClassPath=/mnt/share/iml-library/library/*",
     "__TOREE_OPTS__": "",
     "IML_HOME": "/mnt/share",
     "SPARK_EXECUTOR_URI": "/mnt/share/spark-2.1.0-bin-hadoop2.7.tgz",
