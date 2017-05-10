@@ -1,0 +1,19 @@
+{
+  "display_name": "Eric-mesos-kernel",
+  "env": {
+    "PYTHONPATH": "/usr/local/spark/python:/usr/local/spark/python/lib/py4j-0.10.4-src.zip",
+    "SPARK_HOME": "/usr/local/spark",
+    "PYTHON_EXEC": "python",
+    "DEFAULT_INTERPRETER": "Scala",
+    "__TOREE_SPARK_OPTS__": "--master mesos://9.30.99.168:5050 --driver-memory 1g --executor-memory 1g --executor-cores 1 --queue thequeue  --conf spark.executor.uri=file:///mnt/share/spark-2.1.0-bin-hadoop2.7.tgz --conf spark.mesos.coarse=false --conf spark.executor.extraClassPath=/mnt/share/iml-library/library/* --conf spark.driver.extraClassPath=/mnt/share/iml-library/library/*",
+    "SPARK_OPTS": "--master mesos://9.30.99.168:5050 --driver-memory 2g --executor-memory 1g --executor-cores 1 --queue thequeue  --conf spark.executor.uri=file:///mnt/share/spark-2.1.0-bin-hadoop2.7.tgz --conf spark.mesos.coarse=false --conf spark.executor.extraClassPath=/mnt/share/iml-library/library/* --conf spark.driver.extraClassPath=/mnt/share/iml-library/library/*",
+    "__TOREE_OPTS__": "",
+    "IML_HOME": "/mnt/share"
+  },
+  "argv": [
+    "/opt/conda/share/jupyter/kernels/mokshaspark2.0.2_scala/bin/run.sh",
+    "--profile",
+    "{connection_file}"
+  ],
+  "language": "scala"
+}
